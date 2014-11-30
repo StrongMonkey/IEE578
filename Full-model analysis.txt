@@ -1,0 +1,54 @@
+Call:
+lm(formula = Body.fat ~ Age + Height + Weight + Neck.circumferences + 
+    Chest.circumferences + Abdomen.circumferences + Hip.circumferences + 
+    Thigh.circumferences + Knee.circumferences + Ankle.circumferences + 
+    Biceps.circumferences + Forearm.circumferences + Wrist.circumferences, 
+    data = dataset)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-11.169  -2.864  -0.101   3.209  10.007 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            -18.1885    17.3486   -1.05   0.2955    
+Age                      0.0621     0.0323    1.92   0.0562 .  
+Height                  -0.0884     0.0535   -1.65   0.0998 .  
+Weight                  -0.0696     0.0960   -0.72   0.4693    
+Neck.circumferences     -0.4706     0.2325   -2.02   0.0440 *  
+Chest.circumferences    -0.0239     0.0991   -0.24   0.8100    
+Abdomen.circumferences   0.9548     0.0864   11.04   <2e-16 ***
+Hip.circumferences      -0.2075     0.1459   -1.42   0.1562    
+Thigh.circumferences     0.2361     0.1444    1.64   0.1033    
+Knee.circumferences      0.0153     0.2420    0.06   0.9497    
+Ankle.circumferences     0.1740     0.2215    0.79   0.4329    
+Biceps.circumferences    0.1816     0.1711    1.06   0.2897    
+Forearm.circumferences   0.4520     0.1991    2.27   0.0241 *  
+Wrist.circumferences    -1.6206     0.5349   -3.03   0.0027 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.31 on 238 degrees of freedom
+Multiple R-squared:  0.749,	Adjusted R-squared:  0.735 
+F-statistic: 54.6 on 13 and 238 DF,  p-value: <2e-16
+
+Analysis of Variance Table
+
+Response: Body.fat
+                        Df Sum Sq Mean Sq F value  Pr(>F)    
+Age                      1   1493    1493   80.56 < 2e-16 ***
+Height                   1   6674    6674  360.08 < 2e-16 ***
+Weight                   1   1043    1043   56.27 1.2e-12 ***
+Neck.circumferences      1    152     152    8.22  0.0045 ** 
+Chest.circumferences     1    641     641   34.59 1.4e-08 ***
+Abdomen.circumferences   1   2757    2757  148.76 < 2e-16 ***
+Hip.circumferences       1     23      23    1.22  0.2713    
+Thigh.circumferences     1    111     111    5.97  0.0153 *  
+Knee.circumferences      1      0       0    0.00  0.9714    
+Ankle.circumferences     1      0       0    0.00  0.9481    
+Biceps.circumferences    1     45      45    2.44  0.1198    
+Forearm.circumferences   1     57      57    3.10  0.0795 .  
+Wrist.circumferences     1    170     170    9.18  0.0027 ** 
+Residuals              238   4411      19                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
