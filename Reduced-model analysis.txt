@@ -1,0 +1,25 @@
+Call:
+lm(formula = Body.fat ~ Abdomen.circumferences + Height + Wrist.circumferences + 
+    Forearm.circumferences + Neck.circumferences + Age + Thigh.circumferences, 
+    data = deletedDataset)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-9.875 -2.980 -0.345  2.903  9.092 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            -31.4863     8.7562   -3.60  0.00039 ***
+Abdomen.circumferences   0.8822     0.0678   13.01  < 2e-16 ***
+Height                  -0.0945     0.0342   -2.76  0.00625 ** 
+Wrist.circumferences    -1.6145     0.4961   -3.25  0.00130 ** 
+Forearm.circumferences   0.3912     0.1899    2.06  0.04044 *  
+Neck.circumferences     -0.3330     0.2164   -1.54  0.12514    
+Age                      0.0793     0.0297    2.67  0.00813 ** 
+Thigh.circumferences     0.2236     0.1116    2.00  0.04615 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.12 on 240 degrees of freedom
+Multiple R-squared:  0.759,	Adjusted R-squared:  0.752 
+F-statistic:  108 on 7 and 240 DF,  p-value: <2e-16
